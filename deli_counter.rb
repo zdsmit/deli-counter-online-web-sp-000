@@ -15,10 +15,7 @@ end
 
 def take_a_number(deli, customer)
   deli << customer
-  deli.each_with_index do |customer, number|
-    number = number + 1
-    puts "Welcome, #{customer}. You are number #{number} in line."
-  end
+  puts "Welcome, #{customer}. You are number #{deli.length} in line."
 end
 
 def now_serving
