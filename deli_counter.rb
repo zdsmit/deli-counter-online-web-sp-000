@@ -7,7 +7,7 @@ def line(deli)
     deli_line = "The line is currently: "
     deli.each_with_index do |customer, number|
       number = number + 1
-      deli_line << "#{number}. #{customer} "
+      deli_line << "#{number}. #{customer} ".chomp
     end
   puts deli_line
   end
