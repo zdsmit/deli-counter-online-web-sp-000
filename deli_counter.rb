@@ -5,7 +5,8 @@ def line(deli)
     puts "The line is currently empty."
   else
     deli_line = "The line is currently:"
-    deli.each_with_index do |customer, number = 1|
+    deli.each_with_index do |customer, number|
+      number = number + 1
       deli_line << "#{number}. #{customer}"
     end
   puts deli_line
