@@ -23,6 +23,6 @@ def now_serving(deli)
     puts "There is nobody waiting to be served!"
   else
     deli.pop
-    puts "Now serving #{deli[0]}."
+    puts "Currently serving #{deli[0]}."
   end
 end
